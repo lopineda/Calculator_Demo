@@ -1,0 +1,114 @@
+/* Global Reset & Box Sizing */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+}
+
+/* Wrapper (Calculator Container) */
+.wrapper {
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+/* Display Screen */
+.screen {
+    width: 100%;
+    max-width: 326px;
+    padding: 20px;
+    font-size: 35px;
+    text-align: right;
+    color: #232323;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    overflow: auto;
+}
+
+/* Button Row Layout */
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+/* General Button Styling */
+.calc-button {
+    flex-basis: 20%;
+    height: 65px;
+    font-size: 24px;
+    font-family: inherit;
+    color: #232323;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Special Buttons */
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
+
+/* Operator Buttons */
+.operator {
+    background: #ff8c00;
+    color: #fff;
+}
+
+/* Equals Button */
+.calc-button:last-child {
+    background: #00008B;
+    color: #fff;
+}
+
+/* Button Hover & Active Effects */
+.calc-button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.calc-button:active {
+    background-color: #0082b0;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ffaf4d;
+}
+
+.calc-button:last-child:hover {
+    background-color: #1a1aa6;
+}
